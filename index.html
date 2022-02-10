@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" class="light-theme">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript Event KeyCodes</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="JavaScript Event KeyCodes" />
+    <meta
+      name="twitter:description"
+      content="Keycode testing tool - which keys map to which keycodes?"
+    />
+    <meta name="twitter:creator" content="@wesbos" />
+    <meta
+      name="twitter:image"
+      content="https://cdn1.imggmi.com/uploads/2019/7/12/f6b03f5628f7850649714200ab517a52-full.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css"
+    />
+    <link rel="icon" href="" />
+  </head>
+
+  <body>
+    <canvas width="128" height="128" hidden></canvas>
+    <div class="display">
+      <div class="wrap" aria-live="polite" aria-atomic="true">
+        <p class="keycode-display"></p>
+        <p class="text-display">
+          Press any key to get the JavaScript event keycode
+        </p>
+        <div class="cards hide">
+          <div class="card item-key">
+            <div class="card-header">event.key</div>
+            <div class="card-main">
+              <div class="main-description">key</div>
+            </div>
+          </div>
+          <div class="card item-location">
+            <div class="card-header">
+              event.location
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/location"
+                target="_blank"
+                rel="noopener"
+                class="more-info"
+              ></a>
+            </div>
+            <div class="card-main">
+              <div class="main-description">location</div>
+            </div>
+          </div>
+          <div class="card item-which">
+            <div class="card-header">
+              event.which
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent"
+                target="_blank"
+                rel="noopener"
+                class="deprecated-link"
+                >(deprecated)</a
+              >
+            </div>
+            <div class="card-main">
+              <div class="main-description">which</div>
+            </div>
+          </div>
+          <div class="card item-code">
+            <div class="card-header">event.code</div>
+            <div class="card-main">
+              <div class="main-description">code</div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-input"></div>
+      </div>
+      <div class="fixed-buttons">
+        <button
+          id="theme-button"
+          onclick="{toggleTheme()}"
+          class="toggle-button"
+        >
+          Dark theme
+        </button>
+      </div>
+    </div>
+
+    <span class="love"
+      >Made with love by
+      <a href="https://github.com/sumit3021kumar" target="_blank" rel="noopener"
+        >Sumit Kumar</a
+      >
+    </span>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
